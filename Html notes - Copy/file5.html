@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="action.php">
+        <!-- form banane ke liye form tag ka use kiya jata hai action mein uss file ka naam aayega jaha ye form submit hoga ya jo file iss form ko process karegi -->
+
+        Name<input type="text" placeholder="Enter your user Name ">
+        <!-- input se input box aa jata hai type ="text" se hum user se text input le sakte hai placeholder mein by default text jo hum display karna chate hai wo aayega, jese hi hum input me kuch liknge ye placeholder wala text hat jayega  -->
+
+       password <input type="password" placeholder="Enter your Password">
+        <!-- type = password likhne se input box me kuch bhi type karenge wo dot ki form mein display hoga kyuki wo password hai  -->
+
+        <br><br>
+
+        <h3>select your class</h3>
+
+        <label for="1">    
+         <!-- label ka use hum isliye karte hai taaki jab user circle mein click na karke text pe bhi click kare to option select ho jaaye =mein hum jiske liye label use karna chate hai uski id dete hai  -->
+
+        <input type="radio" value="class-X"  name="Class" id="1">Class-X
+
+        <!-- input type radio dene se radio button aajate hai radio butoon mein hum options me se kisi ek ko hi choose kar sakte hai value mei and angular bracket(>) ke bahar same content likte hai value wala backend ke pass jata hai and > ke bahar wala website pe print hota hai , sabhi radio buttons ke liye name same hone chaiye agar hum kisi ek ko choose karwana chate hai too so isliye humne yaha sabhi ko name = "class " diya hai -->
+
+        </label> 
+
+       <label for="2">
+        <input type="radio" value="class-XI" name="Class" id="2">class-XI
+       </label>
+
+    <br><br>
+
+
+
+    <h3>Select your subjects</h3>
+    <label for="01">
+        <input type="checkbox" value="maths" name="Subject" id="01">Maths
+        <!-- input type checkbox dene se hum mltiple option choose kar sakte hai isme value me subject ka naame jo backend ke pass jaayega and > isske bahar bhi same name likne hai ye wala webpage display hoga name mein subject , id sabko unique deni hai  -->
+    </label>
+    <label for="02">
+        <input type="checkbox" value="science" name="Subject" id="02">science
+    </label>
+    <label for="03">
+        <input type="checkbox" value="history" name="Subject" id="03">history
+    </label>
+    <label for="04">
+        <input type="checkbox" value="physics" name="Subject" id="04">physics
+    </label>
+
+
+    <br><br>
+
+    <input type="color" name="color" id="color">
+    <!-- input type color se hum color choose karne ka option de sakte hai  -->
+
+    <br><br>
+
+    <input type="date" name="Date" id="Date">
+    <!-- input type date se hum date select karne ka option de sakte hai -->
+
+    <br>
+
+    <input type="datetime-local" name="Date time" id="DT">
+    <!-- input type date time local se hum date and time set karne ka option de skte hai -->
+
+    <br><br>
+
+    search<input type="search" name="Search" id="search" placeholder="search something here">
+    <!-- input type search se hum search bar ka option de sakte hai -->
+
+    <input type="button" value="Button">
+    <!-- input type button se hum button la sakte hai value me jo liknge wo button pe display hoga  -->
+
+    <br>
+    
+
+    <span>Select Your City: </span>
+
+    <select name="City"  id="City">
+        <!-- select se dropdown create ho jayega -->
+            
+      <!-- the content  written in value will pass to backend and the content written between >< angular bracket will be shown on webpage-->
+
+        <option value="Jaipur">Jaipur</option>
+        <option value="Delhi">delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Banglore">Banglore</option>
+    </select>
+
+    <br><br>
+
+
+    <textarea name="Feedback" id="feed" placeholder="Give your Feedback " cols="30" rows="10">Feedback</textarea>
+    <!-- textarea se hum feedback ke liye form de sakte hai  -->
+
+    <br>
+
+    <input type="reset" value="Reset">
+    <!-- input type reset button se pura form reset ho jaayga , the content written in value will be shown inside button -->
+    <br>
+    <br>
+
+    <input type="submit" value="Submit">
+    <!-- input type submit se form backend ke pass submit ho jaayega , the content written in value will be shown inside button  -->
+    </form>
+
+    
+</body>
+</html>
